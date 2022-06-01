@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_SnippetsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SideMenu()
         }
     }
 }

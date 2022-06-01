@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8B0871B428468E14007BE432 /* SwiftUI_SnippetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0871B328468E14007BE432 /* SwiftUI_SnippetsApp.swift */; };
-		8B0871B628468E14007BE432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0871B528468E14007BE432 /* ContentView.swift */; };
+		8B0871B628468E14007BE432 /* AnimatedTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0871B528468E14007BE432 /* AnimatedTabBarButton.swift */; };
 		8B0871B828468E16007BE432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0871B728468E16007BE432 /* Assets.xcassets */; };
 		8B0871BB28468E16007BE432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0871BA28468E16007BE432 /* Preview Assets.xcassets */; };
+		8BCEEDAF2847D98B009092CE /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCEEDAE2847D98B009092CE /* SideMenu.swift */; };
+		8BCEEDB12847F2C4009092CE /* AlertWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCEEDB02847F2C4009092CE /* AlertWithTextField.swift */; };
+		8BE2A51D2846BF0400B62644 /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8BE2A51C2846BF0400B62644 /* PureSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B0871B028468E14007BE432 /* SwiftUI Snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Snippets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0871B328468E14007BE432 /* SwiftUI_SnippetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SnippetsApp.swift; sourceTree = "<group>"; };
-		8B0871B528468E14007BE432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B0871B528468E14007BE432 /* AnimatedTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarButton.swift; sourceTree = "<group>"; };
 		8B0871B728468E16007BE432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0871BA28468E16007BE432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BCEEDAE2847D98B009092CE /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		8BCEEDB02847F2C4009092CE /* AlertWithTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWithTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE2A51D2846BF0400B62644 /* PureSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +58,11 @@
 			isa = PBXGroup;
 			children = (
 				8B0871B328468E14007BE432 /* SwiftUI_SnippetsApp.swift */,
-				8B0871B528468E14007BE432 /* ContentView.swift */,
+				8BCEEDAE2847D98B009092CE /* SideMenu.swift */,
+				8B0871B528468E14007BE432 /* AnimatedTabBarButton.swift */,
 				8B0871B728468E16007BE432 /* Assets.xcassets */,
 				8B0871B928468E16007BE432 /* Preview Content */,
+				8BCEEDB02847F2C4009092CE /* AlertWithTextField.swift */,
 			);
 			path = "SwiftUI Snippets";
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI Snippets";
+			packageProductDependencies = (
+				8BE2A51C2846BF0400B62644 /* PureSwiftUI */,
+			);
 			productName = "SwiftUI Snippets";
 			productReference = 8B0871B028468E14007BE432 /* SwiftUI Snippets.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 8B0871A728468E14007BE432;
+			packageReferences = (
+				8BE2A51B2846BF0400B62644 /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+			);
 			productRefGroup = 8B0871B128468E14007BE432 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B0871B628468E14007BE432 /* ContentView.swift in Sources */,
+				8BCEEDB12847F2C4009092CE /* AlertWithTextField.swift in Sources */,
+				8BCEEDAF2847D98B009092CE /* SideMenu.swift in Sources */,
+				8B0871B628468E14007BE432 /* AnimatedTabBarButton.swift in Sources */,
 				8B0871B428468E14007BE432 /* SwiftUI_SnippetsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BE2A51B2846BF0400B62644 /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BE2A51C2846BF0400B62644 /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BE2A51B2846BF0400B62644 /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B0871A828468E14007BE432 /* Project object */;
 }
